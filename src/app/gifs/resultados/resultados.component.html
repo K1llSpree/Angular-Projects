@@ -1,0 +1,19 @@
+<!--<ul>
+    <li class="list-item-group" *ngFor="let gif of resultados">
+        {{gif.title}}
+    </li>   
+</ul>-->
+
+<div class="row">
+    <div *ngFor="let gif of resultados"
+     class="col-md-4 col-sm-6 gap-3 mt-3 animate__animated animate__fadeIn">
+        <div class="card">
+            <img src="{{gif.images.downsized_medium.url}}" class="card-img-top" alt="gif {{gif.title}}">
+            <div class="card-body">
+                <p class="card-text">
+                    {{gif.title}}
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
